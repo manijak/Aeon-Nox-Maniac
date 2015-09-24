@@ -31,7 +31,7 @@
 			</control>
 		</control>
 		<control type="group">
-			<visible>![Window.IsActive(home) | Window.IsActive(startup)] | Window.IsActive(script-globalsearch-main.xml)</visible>
+			<visible>![Window.IsActive(home) | Window.IsActive(startup) | [Window.IsVisible(TVGuide) + Player.HasVideo]] | Window.IsActive(script-globalsearch-main.xml)</visible>
 			<include>Window_OpenClose_Animation</include>
 			<visible>![Control.IsVisible(59) | Control.IsVisible(501) | Control.IsVisible(502) | Control.IsVisible(503)]</visible>
 			<include>ViewAnimation</include>
